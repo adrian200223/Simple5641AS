@@ -4,7 +4,7 @@ With this library, you can easily control the 5641AS to display some number, dis
 
 ## Inspiration
 
-
+The library is inspired by the Test library (https://www.arduino.cc/en/Hacking/Libraries), the ShiftRegister 75HC595 library (https://github.com/Simsso/ShiftRegister74HC595/) and this video showing how the 5641AS works (https://www.youtube.com/watch?v=E4CjNPsPrnQ).
 
 
 ## How does it works
