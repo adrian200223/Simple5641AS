@@ -1,14 +1,13 @@
 /*
   Simple5641AS.h - Library for simple use of the 5641AS LED 7-segment display
-  Documentation and examples available at https://github.com/adrian200223/Simple5641AS.cpp
+  Documentation and examples available at https://github.com/adrian200223/Simple5641AS
   Released into the public domain.
 */
 
-#ifndef Test_h
-#define Test_h
+#ifndef Simple5641_h
+#define Simple5641_h
 
 #include <Arduino.h>
-#include "HardwareSerial.h"
 
 const uint8_t segmentCodes[] = {
                      B11111100, 

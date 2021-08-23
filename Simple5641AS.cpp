@@ -1,10 +1,9 @@
 /*
   Simple5641AS.cpp - Library for simple use of the 5641AS LED 7-segment display
-  Documentation and examples available at https://github.com/adrian200223/Simple5641AS.cpp
+  Documentation and examples available at https://github.com/adrian200223/Simple5641AS
   Released into the public domain.
 */
 
-#include <Arduino.h>
 #include "Simple5641AS.h"
 
 // Simple5641AS constructor
