@@ -10,6 +10,7 @@ With this library, you can easily control the 5641AS to display some number, dis
 ## How does it works
 
 Here is an ascii art representing the 5641AS:
+```javascript
 
                       D1             a             f            D2            D3              b
                       /              /             /            /             /               /
@@ -36,6 +37,7 @@ Here is an ascii art representing the 5641AS:
                       /              /             /            /             /               /
                       /              /             /            /             /               /
                       e              d            dot           c             g               d4
+```
 
 
 Taking a look at the first digit, it has the letters asociated with the segments. Each letter represents one segment. In order to make numbers, you need to figure out letter by letter if they are on or off. In the case of the 0 symbol:
@@ -81,27 +83,27 @@ As this code needs to cycle between digits at a very fast pace:
 
 1. Download the zip
 2. Add the library to your Arduino IDE (Program, Add library, Add .ZIP library)
-3. Add '#include <Simple5641AS.h>' to the first lines of your code
+3. Add `#include <Simple5641AS.h>` to the first lines of your code
 4. Instanciate the display, like this (the numbers represent the pins on your arduino board): 
-´´´c++
+```c++
 // segmentPins[] = { a, b, c, d, e, f, g, dot };
 const uint8_t segmentPins[] = { 4, 6, 3, 10, 9, 2, 5, 13 };
 // digitSelectionPins[] = { D1, D2, D3, D4 };
 const uint8_t digitSelectionPins[] = { 12, 11, 8, 7 };
 Simple5641AS component( segmentPins, digitSelectionPins );
-´´´
+```
 5. Call the method you want on your code, for example:
-´´´c++
+```c++
   // countDown() + zeroAnimation() example
   Serial.println("countDown() + zeroAnimation() example");
   component.countDown(5);
   component.zeroAnimation();
   delay(1000);
-´´´
+```
 
 
 ## Functions
-´´´c++
+```c++
     // constructor
     Simple5641AS(const uint8_t * segmentPins, const uint8_t * digitSelectionPins);
     
@@ -154,4 +156,4 @@ Simple5641AS component( segmentPins, digitSelectionPins );
 
     // visual explanation of how it works
     void visualExplanation();
-´´´
+```
